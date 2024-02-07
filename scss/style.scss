@@ -70,3 +70,112 @@ $maxHeight: $minHeight * 2 + 10px;
     }
   
 }
+
+
+.flex {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+
+    &__wrapper1 {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+
+        &_small1 {
+            flex-grow: 2;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .flex-item {
+                height: $minHeight;
+            }
+
+            .flex-item1 {
+             background-color: lavender;
+             width: 100%;
+            }
+
+            .flex-item5 {
+             background-color: orchid;
+             flex-grow: 1;
+            }
+
+            .flex-item6 {
+             background-color: fuchsia;
+             flex-grow: 1;
+            }
+        }
+
+        &_small2 {
+            flex-grow: 3;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            .flex-item {
+                height: $maxHeight;
+            }
+        
+
+            .flex-item2 { 
+             background-color: thistle;
+             flex-grow: 2;
+            }
+
+            .flex-item3 {
+             background-color: plum;
+             flex-grow: 1;
+            }
+        }
+
+        &_small3 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .flex-item {
+                height: $minHeight;
+            }
+
+            .flex-item4 {
+             background-color: violet;
+             flex-grow: 1;
+            }
+
+            .flex-item7 {
+             background-color: magenta;
+             flex-grow: 1;
+            }
+        }
+    }
+
+    &__wrapper2 {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: $minHeight;
+
+        .flex-item8 {
+        background-color: mediumorchid;
+        flex-grow: 1; 
+        }
+
+        .flex-item9 {
+        background-color: mediumpurple;
+        flex-grow: 2;
+        }
+
+        .flex-item10 {
+        background-color: blueviolet;
+        flex-grow: 2;   
+        }
+
+        .flex-item11 {
+        background-color: darkviolet;
+        flex-grow: 1;
+        }
+    }
+}
